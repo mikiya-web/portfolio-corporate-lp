@@ -267,6 +267,11 @@ body.is-menu-open {
     transition: opacity 1s ease 0.4s, transform 1s ease 0.3s;
 }
 
+.service-item:nth-of-type(even) .service-item__title {
+    display: inline-block;
+    text-align: right;
+}
+
 .service-item.show .service-item__title,
 .service-item.show .service-item__text {
     opacity: 1;
