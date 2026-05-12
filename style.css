@@ -1036,6 +1036,7 @@ body.is-menu-open {
         font-size: clamp(19.2px, 1.56vw, 30px);
         margin-top: clamp(128px, 10.42vw, 200px);
         white-space: normal;
+        line-height: 1.5;
     }
 
     .about__wrap {
