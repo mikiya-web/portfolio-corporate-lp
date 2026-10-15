@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speed Up Design Studio (Dummy site)</title>
+    <meta name="description"
+          content="架空のWeb制作会社「Speed Up Design Studio」を想定したポートフォリオ作品です。">
+    <title>Speed Up Design Studio | 架空のWeb制作会社</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="./script.js" defer></script>
 </head>
 
@@ -17,18 +20,32 @@
             <a href="#" class="header__logo-link">Speed Up Design Studio</a>
         </div>
 
-        <nav class="nav nav--desktop">
+        <nav class="nav nav--desktop" aria-label="メインメニュー">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#Service" class="nav__link">Service</a></li>
-                <li class="nav__item"><a href="#Works" class="nav__link">Works</a></li>
-                <li class="nav__item"><a href="#About" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#FAQ" class="nav__link">FAQ</a></li>
-                <li class="nav__item"><a href="#Contact" class="nav__link">Contact</a></li>
+                <li class="nav__item">
+                    <a href="#Service" class="nav__link">Service</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#Works" class="nav__link">Works</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#About" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#FAQ" class="nav__link">FAQ</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#Contact" class="nav__link">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <button class="burger" aria-label="メニューを開く" aria-expanded="false">
+    <button type="button"
+            class="burger"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
         <span class="burger__line"></span>
         <span class="burger__line"></span>
         <span class="burger__line"></span>
@@ -36,19 +53,32 @@
 
     <div class="nav__overlay"></div>
 
-    <nav class="nav__drawer" aria-hidden="true">
+    <nav class="nav__drawer"
+         id="mobile-menu"
+         aria-label="スマホ用メニュー"
+         aria-hidden="true">
         <ul class="nav__list">
-            <li class="nav__item"><a href="#Service" class="nav__link">Service</a></li>
-            <li class="nav__item"><a href="#Works" class="nav__link">Works</a></li>
-            <li class="nav__item"><a href="#About" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#FAQ" class="nav__link">FAQ</a></li>
-            <li class="nav__item"><a href="#Contact" class="nav__link">Contact</a></li>
+            <li class="nav__item">
+                <a href="#Service" class="nav__link">Service</a>
+            </li>
+            <li class="nav__item">
+                <a href="#Works" class="nav__link">Works</a>
+            </li>
+            <li class="nav__item">
+                <a href="#About" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+                <a href="#FAQ" class="nav__link">FAQ</a>
+            </li>
+            <li class="nav__item">
+                <a href="#Contact" class="nav__link">Contact</a>
+            </li>
         </ul>
     </nav>
 
     <main>
         <section class="fv">
-            <div class="fv__marquee">
+            <div class="fv__marquee" aria-hidden="true">
                 <div class="fv__track">
                     <div class="fv__track-group">
                         <span>Speed Up Design Studio Speed Up Design Studio</span>
@@ -60,19 +90,24 @@
                     </div>
                 </div>
             </div>
+
             <div class="fv__copy">
-                <h1 class="fv__copy-title">Speed is not a tool. It's your advantage.</h1>
+                <h1 class="fv__copy-title">
+                    Speed is not a tool. It's your advantage.
+                </h1>
                 <p class="fv__copy-text">
                     速さは、ただの手段じゃない。<br>
                     それは、ビジネスを前に進める力。<br>
                     Speed Up Design Studioと加速しませんか。
                 </p>
             </div>
+
             <div class="fv__contact">
                 <a href="dummy.html" class="fv__button">Recruit</a>
                 <a href="dummy.html" class="fv__button">Entry</a>
             </div>
         </section>
+
         <section class="service" id="Service">
             <div class="service__wrap">
                 <h2 class="service__title">Service</h2>
@@ -84,25 +119,32 @@
                     Speed Up Design Studioは、そのすべてを提供します。
                 </p>
             </div>
+
             <div class="service__inner">
                 <div class="service-item">
                     <div class="service-item__inner">
-                        <h3 class="service-item__title">Web Design & Development</h3>
+                        <h3 class="service-item__title">
+                            Web Design &amp; Development
+                        </h3>
                         <p class="service-item__text">
                             コーポレートサイト・LP・採用サイトなど、目的に合わせた最適なWebサイトを制作。
                             デザインだけでなく、成果につながる構造設計まで一貫して行います。
                         </p>
                     </div>
                 </div>
+
                 <div class="service-item">
                     <div class="service-item__inner">
-                        <h3 class="service-item__title">Landing Page Optimization</h3>
+                        <h3 class="service-item__title">
+                            Landing Page Optimization
+                        </h3>
                         <p class="service-item__text">
                             ユーザーの行動を分析し、離脱を防ぎ、成果を最大化するLPを設計。
                             スピードと改善を繰り返しながら、売れるページを育てます。
                         </p>
                     </div>
                 </div>
+
                 <div class="service-item">
                     <div class="service-item__inner">
                         <h3 class="service-item__title">UI / UX Design</h3>
@@ -112,9 +154,12 @@
                         </p>
                     </div>
                 </div>
+
                 <div class="service-item">
                     <div class="service-item__inner">
-                        <h3 class="service-item__title">Maintenance & Support</h3>
+                        <h3 class="service-item__title">
+                            Maintenance &amp; Support
+                        </h3>
                         <p class="service-item__text">
                             公開後の更新・改善・運用までサポート。
                             スピード感を持った対応で、ビジネスの変化に柔軟に対応します。
@@ -122,80 +167,107 @@
                     </div>
                 </div>
             </div>
+
             <p class="service__note">
-                最短2週間での公開にも対応。<br>スピードと品質を両立します。
+                最短2週間での公開にも対応。<br>
+                スピードと品質を両立します。
             </p>
         </section>
+
         <section class="works" id="Works">
             <div class="works__wrap">
-                <p class="works__title">Works</p>
-                <p class="works__subtitle">制作実績</p>
+                <h2 class="works__title">Works</h2>
+                <p class="works__subtitle">制作実績（架空の事例）</p>
                 <p class="works__lead">
-                    私たちは、見た目だけのWebサイトは作りません。<br>課題を明確にし、最適な設計とデザインで、<br>ビジネスの成果につながるアウトプットを提供します。<br>そのプロセスと結果をご覧ください。
+                    私たちは、見た目だけのWebサイトは作りません。<br>
+                    課題を明確にし、最適な設計とデザインで、<br>
+                    ビジネスの成果につながるアウトプットを提供します。<br>
+                    そのプロセスと結果をご覧ください。
                 </p>
             </div>
-            <div class="works__img">
-                <!-- デスクトップ用スライダーエリア（ボタン＋表示エリアを横並び） -->
-                <div class="works__slider-area">
-                    <!-- デスクトップ用左ボタン（1025px以上のみ表示） -->
-                    <button class="works__button--prev-desktop fas fa-chevron-left" id="prevImageDesktop"
-                        aria-label="前へ"></button>
 
-                    <!-- worksDisplay: デスクトップ＆SPで共通使用 -->
+            <div class="works__img">
+                <div class="works__slider-area">
+                    <button type="button"
+                            class="works__button--prev-desktop fas fa-chevron-left"
+                            id="prevImageDesktop"
+                            aria-label="前の制作実績へ"></button>
+
                     <div class="worksDisplay" id="worksDisplay">
-                        <!-- JSが動的にimg・textcontent・works__slideを生成 -->
+                        <!-- JavaScriptで制作実績を表示 -->
                     </div>
 
-                    <!-- デスクトップ用右ボタン（1025px以上のみ表示） -->
-                    <button class="works__button--next-desktop fas fa-chevron-right" id="nextImageDesktop"
-                        aria-label="次へ"></button>
+                    <button type="button"
+                            class="works__button--next-desktop fas fa-chevron-right"
+                            id="nextImageDesktop"
+                            aria-label="次の制作実績へ"></button>
                 </div>
 
-                <!-- ページ番号とSP用ボタン -->
                 <div class="works__nav-bottom">
-                    <div class="works__button--prev fas fa-chevron-left" id="prevImageSp"></div>
-                    <div id="currentSlideNumber" class="currentSlideNumber"></div>
-                    <div class="works__button--next fas fa-chevron-right" id="nextImageSp"></div>
+                    <button type="button"
+                            class="works__button--prev fas fa-chevron-left"
+                            id="prevImageSp"
+                            aria-label="前の制作実績へ"></button>
+                    <div id="currentSlideNumber"
+                         class="currentSlideNumber"></div>
+                    <button type="button"
+                            class="works__button--next fas fa-chevron-right"
+                            id="nextImageSp"
+                            aria-label="次の制作実績へ"></button>
                 </div>
             </div>
+
             <ul id="imageList" class="works__list"></ul>
         </section>
+
         <section class="about" id="About">
             <div class="about__wrap">
-                <p class="about__title">About</p>
+                <h2 class="about__title">About</h2>
                 <p class="about__subtitle">私たちについて</p>
-                <p class="about__lead">Speed Up Design Studioは、
+                <p class="about__lead">
+                    Speed Up Design Studioは、
                     スピードと品質の両立を強みとするWeb制作スタジオです。
-
                     単に「早く作る」のではなく、
                     目的を明確にし、最適な構成とデザインを最短で形にすることで、
                     ビジネスの成長を加速させることを目指しています。
-
                     戦略・設計・デザイン・実装までを一貫して行い、
-                    成果につながるWebサイトを提供します。</p>
+                    成果につながるWebサイトを提供します。
+                </p>
             </div>
+
             <div class="about__inner">
                 <div class="about__textcontent">
                     <p class="about__speed">最短で価値を届けるスピード</p>
                     <p class="about__strategy">目的から逆算した設計</p>
                     <p class="about__quality">成果につながるクオリティ</p>
                 </div>
-                <img src="img/office.png" class="about__img">
+                <img src="img/office.png"
+                     class="about__img"
+                     alt="制作スタジオのオフィスイメージ">
             </div>
-            <p class="about__note">最短2週間での公開にも対応。<br>スピードと品質を両立します。</p>
+
+            <p class="about__note">
+                最短2週間での公開にも対応。<br>
+                スピードと品質を両立します。
+            </p>
         </section>
+
         <section class="faq" id="FAQ">
             <div class="faq__inner">
                 <h2 class="faq__title">FAQ</h2>
                 <p class="faq__subtitle">よくある質問</p>
+
                 <ul class="faq__list">
                     <li class="faq__item">
-                        <button class="faq__question" aria-expanded="false">
+                        <button type="button"
+                                class="faq__question"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-1">
                             <span class="faq__q">Q</span>
                             制作期間はどれくらいかかりますか？
-                            <span class="faq__icon"></span>
+                            <span class="faq__icon" aria-hidden="true"></span>
                         </button>
-                        <div class="faq__answer">
+                        <div class="faq__answer" id="faq-answer-1">
                             <p>
                                 内容や規模にもよりますが、LPであれば最短2週間、
                                 コーポレートサイトは約1〜2ヶ月が目安です。
@@ -203,39 +275,51 @@
                             </p>
                         </div>
                     </li>
+
                     <li class="faq__item">
-                        <button class="faq__question" aria-expanded="false">
+                        <button type="button"
+                                class="faq__question"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-2">
                             <span class="faq__q">Q</span>
                             デザインだけの依頼も可能ですか？
-                            <span class="faq__icon"></span>
+                            <span class="faq__icon" aria-hidden="true"></span>
                         </button>
-                        <div class="faq__answer">
+                        <div class="faq__answer" id="faq-answer-2">
                             <p>
                                 はい、可能です。UI/UX設計からデザインのみのご依頼にも対応しています。
                                 既存サイトの改善提案などもお気軽にご相談ください。
                             </p>
                         </div>
                     </li>
+
                     <li class="faq__item">
-                        <button class="faq__question" aria-expanded="false">
+                        <button type="button"
+                                class="faq__question"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-3">
                             <span class="faq__q">Q</span>
                             修正は何回まで対応してもらえますか？
-                            <span class="faq__icon"></span>
+                            <span class="faq__icon" aria-hidden="true"></span>
                         </button>
-                        <div class="faq__answer">
+                        <div class="faq__answer" id="faq-answer-3">
                             <p>
                                 初期段階での方向性確定後、軽微な修正は柔軟に対応いたします。
                                 大幅な仕様変更については別途ご相談となります。
                             </p>
                         </div>
                     </li>
+
                     <li class="faq__item">
-                        <button class="faq__question" aria-expanded="false">
+                        <button type="button"
+                                class="faq__question"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-4">
                             <span class="faq__q">Q</span>
                             公開後の運用や保守もお願いできますか？
-                            <span class="faq__icon"></span>
+                            <span class="faq__icon" aria-hidden="true"></span>
                         </button>
-                        <div class="faq__answer">
+                        <div class="faq__answer" id="faq-answer-4">
                             <p>
                                 はい、可能です。更新対応・改善提案・分析など、
                                 公開後の運用も継続的にサポートいたします。
@@ -245,36 +329,75 @@
                 </ul>
             </div>
         </section>
+
         <section class="contact" id="Contact">
             <div class="contact__inner">
                 <h2 class="contact__title">Contact</h2>
                 <p class="contact__subtitle">お問い合わせ</p>
-                <p class="contact__note">通常1営業日以内にご返信いたします。</p>
+                <p class="contact__note">
+                    このサイトは架空の制作会社を想定した作品です。<br>
+                    フォームは入力チェックのデモで、内容は送信されません。
+                </p>
+
                 <form class="contact__form" novalidate>
                     <div class="contact__group">
-                        <label class="contact__label">お名前<span>*</span></label>
-                        <input type="text" name="name" class="contact__input" placeholder="山田 太郎">
-                        <p class="contact__error"></p>
+                        <label class="contact__label" for="contact-name">
+                            お名前<span>*</span>
+                        </label>
+                        <input type="text"
+                               id="contact-name"
+                               name="name"
+                               class="contact__input"
+                               placeholder="山田 太郎"
+                               autocomplete="name"
+                               aria-describedby="contact-name-error"
+                               required>
+                        <p class="contact__error"
+                           id="contact-name-error"
+                           aria-live="polite"></p>
                     </div>
+
                     <div class="contact__group">
-                        <label class="contact__label">メールアドレス<span>*</span></label>
-                        <input type="email" name="email" class="contact__input" placeholder="example@email.com">
-                        <p class="contact__error"></p>
+                        <label class="contact__label" for="contact-email">
+                            メールアドレス<span>*</span>
+                        </label>
+                        <input type="email"
+                               id="contact-email"
+                               name="email"
+                               class="contact__input"
+                               placeholder="example@email.com"
+                               autocomplete="email"
+                               aria-describedby="contact-email-error"
+                               required>
+                        <p class="contact__error"
+                           id="contact-email-error"
+                           aria-live="polite"></p>
                     </div>
+
                     <div class="contact__group">
-                        <label class="contact__label">お問い合わせ内容<span>*</span></label>
-                        <textarea name="message" class="contact__textarea" rows="5"
-                            placeholder="ご相談内容をご記入ください"></textarea>
-                        <p class="contact__error"></p>
+                        <label class="contact__label" for="contact-message">
+                            お問い合わせ内容<span>*</span>
+                        </label>
+                        <textarea id="contact-message"
+                                  name="message"
+                                  class="contact__textarea"
+                                  rows="5"
+                                  placeholder="ご相談内容をご記入ください"
+                                  aria-describedby="contact-message-error"
+                                  required></textarea>
+                        <p class="contact__error"
+                           id="contact-message-error"
+                           aria-live="polite"></p>
                     </div>
-                    <button type="submit" class="contact__button">送信する</button>
-                    <p class="contact__success"></p>
+
+                    <button type="submit" class="contact__button">
+                        入力内容を確認する（デモ）
+                    </button>
+                    <p class="contact__success" role="status"></p>
                 </form>
             </div>
         </section>
     </main>
-
-
 </body>
 
 </html>
